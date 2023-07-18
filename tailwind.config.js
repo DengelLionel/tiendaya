@@ -36,7 +36,10 @@ module.exports = {
                 'nav': '35px 0 60px -15px rgba(0, 0, 0, 0.5)',
                 'shadownuevo':'0 10px 29px 0 rgba(68, 88, 144, 0.1)',
                 'search':'0 0 0 0.2rem rgba(32,216,102,.5)'
-              }
+              },
+            backgroundImage:{
+                'subtle-prism': "url('/subtle-prism.svg')",
+            }
         },
     },
     variants: {
