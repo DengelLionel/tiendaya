@@ -1,11 +1,10 @@
-import Servicios from '@/components/servicios'
-import {memo} from 'react'
+import { memo } from 'react'
 import Head from 'next/head'
 import HeaderPrincipal from '@/components/Layouts/layauts_two/HeaderPrincipal'
 import FormularioContactanos from '@/components/contactanos/FormularioContactanos'
 const contactanos = () => {
-  return (
-    <>
+    return (
+        <>
             <Head>
                 <title>Crea tienda ya</title>
             </Head>
@@ -13,12 +12,11 @@ const contactanos = () => {
             <HeaderPrincipal />
 
             <main className="bg-white mt-[140px]">
-                <FormularioContactanos/>
-              
+                <FormularioContactanos />
             </main>
             {/*       <Footer /> */}
         </>
-  )
+    )
 }
 
 export default memo(contactanos)

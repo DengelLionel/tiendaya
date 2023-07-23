@@ -39,6 +39,7 @@ module.exports = {
               },
             backgroundImage:{
                 'subtle-prism': "url('/subtle-prism.svg')",
+                'negroblu':"url('/negroblu.svg')"
             }
         },
     },

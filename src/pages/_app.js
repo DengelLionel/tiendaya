@@ -39,7 +39,7 @@ const playNormal = Playfair_Display({
 })
 const App = ({ Component, pageProps }) => (
     <main
-        className={`${montserrat} ${latoitalic} ${latonormal} ${playItalic} ${playNormal}`}>
+        className={`${montserrat.variable} ${latoitalic.variable} ${latonormal.variable} ${playItalic.variable} ${playNormal.variable}`}>
         <Contextpaginaifno>
             <Component {...pageProps} />
         </Contextpaginaifno>
