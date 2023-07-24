@@ -19,6 +19,7 @@ const Navbar = () => {
                         <Image
                             src="https://res.cloudinary.com/darps1cta/image/upload/v1689460545/creatiendaya/crea-tienda-ya.jpg"
                             layout="fill"
+                            priority={true}
                             objectFit="contain"
                             alt="crea tienda ya"
                         />

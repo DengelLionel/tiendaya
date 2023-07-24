@@ -34,6 +34,7 @@ export default function FlexibleSection() {
                         <Image
                             src="https://res.cloudinary.com/darps1cta/image/upload/v1689896647/creatiendaya/dise%C3%B1os-personalizados-de-tiendas-online.png"
                             alt="Image 1"
+                            priority={true}
                             layout="fill"
                             objectFit="contain"
                         />

@@ -16,7 +16,7 @@ export default function Home() {
             <HeaderPrincipal />
 
             <main className="bg-white">
-                <div className="w-full h-[900px] sm:h-[500px] md:h-[400px] bg-fixed lg:h-[600px] bg-subtle-prism bg-no-repeat bg-center bg-cover">
+                <div className="w-full h-[900px] sm:h-[650px] md:h-[400px] bg-fixed lg:h-[600px] bg-subtle-prism bg-no-repeat bg-center bg-cover">
                     <FlexibleSection />
                 </div>
                 <Personalizacion />
