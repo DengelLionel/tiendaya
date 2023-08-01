@@ -17,12 +17,13 @@ module.exports = {
                 "negro":"#020507",
                 "blueTwo":"#1f2951",
                 "blueTres":"#6893AE",
-                "verde":"#3ddf59",
+                "verde":"#00C957",
                 "verde_hover":"#00e576",
-                "azul":"#1a61db",
+                "azul":"#151536",
                 "color2":"#07edea",
                 "pinkk":"#f152f4",
-                "greenn":"#24f057"
+                "greenn":"#24f057",
+             
                      },
             fontFamily:{
                 montserrat:"var(--font-montserrat)",

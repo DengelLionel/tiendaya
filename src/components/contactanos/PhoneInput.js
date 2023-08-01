@@ -5,7 +5,21 @@ import { isValidPhoneNumber } from 'libphonenumber-js'
 const countryCodes = [
     { value: '51', label: 'Peru (+51)' },
     { value: '1', label: 'USA (+1)' },
-    // Añade más códigos de país aquí
+    { value: '54', label: 'Argentina (+54)' },
+    { value: '55', label: 'Brasil (+55)' },
+    { value: '56', label: 'Chile (+56)' },
+    { value: '57', label: 'Colombia (+57)' },
+    { value: '593', label: 'Ecuador (+593)' },
+    { value: '52', label: 'México (+52)' },
+    { value: '58', label: 'Venezuela (+58)' },
+    { value: '49', label: 'Alemania (+49)' },
+    { value: '34', label: 'España (+34)' },
+    { value: '33', label: 'Francia (+33)' },
+    { value: '39', label: 'Italia (+39)' },
+    { value: '44', label: 'Reino Unido (+44)' },
+    { value: '41', label: 'Suiza (+41)' },
+    { value: '46', label: 'Suecia (+46)' },
+    { value: '351', label: 'Portugal (+351)' },
 ]
 
 const PhoneInput = ({ setPhone, error, setError }) => {
@@ -41,7 +55,7 @@ const PhoneInput = ({ setPhone, error, setError }) => {
                 className="mb-2"
             />
             <input
-                className="w-full text-gray-500 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                className="w-full text-gray-500 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-verde"
                 type="text"
                 value={userInput}
                 onChange={handlePhoneChange}

@@ -1,7 +1,7 @@
-import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckDouble } from '@fortawesome/free-solid-svg-icons'
 import CuadroServicio from './CuadroServicio'
+
 const services = [
     {
         category: 'Desarrollo Web y Soporte Técnico',
@@ -11,7 +11,7 @@ const services = [
                     'Desarrollo de tiendas en línea con Shopify y WooCommerce.',
                 descripcion: 'Te ayudamos a crear tu tienda online.',
                 llamadaaccion: '¡Empieza hoy!',
-                link: '/servicios/',
+                link: `/servicios/desarrollo-shopify-woocommerce`,
             },
             {
                 titulo: 'Creación de páginas web en WordPress',
@@ -70,7 +70,7 @@ const services = [
         ],
     },
     {
-        category: 'Analítica y Estrategia de Negocio',
+        category: 'Marketing Digital',
         items: [
             {
                 titulo: 'Analítica web y de ventas',
@@ -104,30 +104,30 @@ const services = [
 
 export default function Services() {
     return (
-        <section className="mt-[140px] bg-gray-50 py-16 px-4">
-            <div className="max-w-7xl mx-auto space-y-16">
+        <section className="mt-[70px] bg-gray-50 py-16 px-4 h-full">
+            <div className="w-full flex  flex-wrap justify-center items-center space-y-16">
                 {services.map((service, i) => (
-                    <div key={i} className="space-y-6">
-                        <h2 className="text-3xl font-bold text-green-900 ">
+                    <div key={i} className="space-y-6 text-center">
+                        <FontAwesomeIcon
+                            icon={faCheckDouble}
+                            style={{ color: '#00C957', width: '18' }}
+                        />{' '}
+                        <h2 className="text-2xl text-center font-bold text-azul lg:3xl ">
                             {' '}
-                            <FontAwesomeIcon
-                                icon={faCheckDouble}
-                                style={{ color: '#08e222' }}
-                            />{' '}
                             {service.category}
                         </h2>
-                        <ul className="space-y-4">
+                        <section className="space-y-4">
                             {service.items.map((item, j) => (
-                                <li key={j} className="flex space-x-3">
-                                    <CuadroServicio
-                                        titulo={item.titulo}
-                                        descripcion={item.descripcion}
-                                        llamadaaccion={item.llamadaaccion}
-                                        link={item.link}
-                                    />
-                                </li>
+                                <CuadroServicio
+                                    key={j}
+                                    ide={j}
+                                    titulo={item.titulo}
+                                    descripcion={item.descripcion}
+                                    llamadaaccion={item.llamadaaccion}
+                                    link={item.link}
+                                />
                             ))}
-                        </ul>
+                        </section>
                     </div>
                 ))}
             </div>

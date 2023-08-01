@@ -55,6 +55,7 @@ const NavBarMobil = () => {
                         <Image
                             layout="fill"
                             objectFit="contain"
+                            priority={true}
                             src={
                                 'https://res.cloudinary.com/darps1cta/image/upload/v1689460545/creatiendaya/crea-tienda-ya.jpg'
                             }

@@ -77,7 +77,7 @@ const FormularioContactanos = () => {
                         Nombre Completo
                     </label>
                     <input
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-verde"
                         type="text"
                         id="name"
                         value={nombre}
@@ -97,7 +97,7 @@ const FormularioContactanos = () => {
                         Correo electrónico
                     </label>
                     <input
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-verde"
                         type="email"
                         id="email"
                         value={email}
@@ -131,7 +131,7 @@ const FormularioContactanos = () => {
                     <textarea
                         value={mensaje}
                         onChange={e => setMensaje(e.target.value)}
-                        className="w-full h-32 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                        className="w-full h-32 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-verde"
                     />
                     {errorMensaje && (
                         <p className="text-red-500 text-xs italic mt-2">
@@ -141,7 +141,7 @@ const FormularioContactanos = () => {
                 </div>
                 <button
                     disabled={enviando}
-                    className="w-full bg-blue-500 text-white text-sm font-medium py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
+                    className="w-full bg-verde text-white text-sm font-medium py-2 px-4 rounded-md hover:bg-verde_hover transition duration-300"
                     type="submit">
                     {enviando ? 'Enviando...' : 'Contactame'}
                 </button>
