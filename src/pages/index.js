@@ -6,6 +6,9 @@ import Redes from '@/components/pagina/Redes'
 import Ventajas from '@/components/pagina/Ventajas'
 import Testimonials from '@/components/pagina/Testimonials'
 import FAQ from '@/components/pagina/FAQ'
+import Footer from '@/components/pagina/Footer'
+import Whatsapp from '@/components/pagina/Whatsapp'
+
 export default function Home() {
     return (
         <>
@@ -15,7 +18,7 @@ export default function Home() {
 
             <HeaderPrincipal />
 
-            <main className="bg-white">
+            <main className="bg-white h-full">
                 <div className="w-full h-[900px] sm:h-[650px] md:h-[400px] bg-fixed lg:h-[600px] bg-subtle-prism bg-no-repeat bg-center bg-cover">
                     <FlexibleSection />
                 </div>
@@ -26,16 +29,9 @@ export default function Home() {
                 <Ventajas />
                 <Testimonials />
                 <FAQ />
-                {/*    <Servicios />
-                <Info />
-                <NuestrasAreas />
-                <ProductosDestacados />
-                <Whatsapp />
-                <ConocePromocines />
-                <Marcas />
-                */}
             </main>
-            {/*       <Footer /> */}
+            <Whatsapp />
+            <Footer />
         </>
     )
 }

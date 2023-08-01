@@ -15,6 +15,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import CuadroServicio from './CuadroServicio'
 import Banner from './Banner'
+import Ventajas from '@/components/pagina/Ventajas'
+import NuestrosClientes from '../pagina/NuestrosClientes'
+import AccionBannerColor from '../pagina/AccionBannerColor'
 
 const services = [
     {
@@ -148,7 +151,6 @@ export default function Services() {
                             {service.items.map((item, j) => (
                                 <CuadroServicio
                                     key={j}
-                                    ide={j}
                                     titulo={item.titulo}
                                     icono={item.icono}
                                     descripcion={item.descripcion}
@@ -160,6 +162,9 @@ export default function Services() {
                     </div>
                 ))}
             </div>
+            <Ventajas />
+            <NuestrosClientes />
+            <AccionBannerColor />
         </section>
     )
 }

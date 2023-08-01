@@ -4,8 +4,8 @@ const IconFacebook = ({ fill, ...props }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            width={17}
-            height={17}
+            width={25}
+            height={25}
             fill="none"
             {...props}>
             <path

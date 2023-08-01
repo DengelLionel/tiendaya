@@ -18,7 +18,7 @@ const Ventaja = ({ titulo, descripcion, nombreIcon, colorborde }) => (
 )
 const Ventajas = () => {
     return (
-        <div className=" w-full flex flex-col items-center pt-[100px] lg:gap-[20px] md:justify-center md:items-center text-center ">
+        <div className=" w-full flex flex-col items-center pt-[100px] pb-[100px] lg:gap-[20px] md:justify-center md:items-center text-center ">
             <h2 className="text-xl  md:text-3xl leading-normal lg:leading-[3rem] tracking-wide font-bold lg:font-extrabold text-gray-700 font-montserrat  text-center lg:w-[400px]">
                 ¿POR QUÉ ESCOGER "CREA TIENDA YA"?
             </h2>

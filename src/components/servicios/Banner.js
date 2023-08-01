@@ -11,6 +11,9 @@ const Banner = () => {
                 layout="fill"
                 objectFit="cover"
             />
+            <h1 className=" absolute top-[27%] left-[15%] lg:top-[18%] lg:left-[30%] text-[3rem] lg:text-[5rem] font-montserrat font-extrabold text-blackTransparente">
+                SERVICIOS
+            </h1>
         </div>
     )
 }

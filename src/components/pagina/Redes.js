@@ -3,7 +3,7 @@ import Image from 'next/legacy/image'
 import Link from 'next/link'
 const Redes = () => {
     return (
-        <div className="flex flex-col gap-[20px] lg:gap-0 lg:flex-row items-center justify-center">
+        <div className="flex flex-col gap-[20px] lg:gap-0 lg:w-[1200px] lg:flex-row items-center justify-center">
             <div className=" w-full md:w-1/2 flex flex-col items-center lg:w-[400px] lg:gap-[20px] md:justify-center md:items-center text-center ">
                 <h2 className="text-2xl md:text-4xl leading-normal lg:leading-[3rem] tracking-wide font-bold lg:font-extrabold text-gray-100 font-montserrat  text-center">
                     Elevate sobre el ruido de las{' '}

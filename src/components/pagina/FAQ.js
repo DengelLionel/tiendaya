@@ -41,7 +41,7 @@ export default function FAQ() {
 
 function Question({ question, answer }) {
     return (
-        <div className="py-5">
+        <div className="py-5 pb-[20px] lg:pb-[50px]">
             <details className="group">
                 <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                     <span>{question}</span>
