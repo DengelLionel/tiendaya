@@ -1,6 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-    faCheckDouble,
     faShop,
     faWindowMaximize,
     faLaptopCode,
@@ -134,15 +132,11 @@ export default function Services() {
     return (
         <section className="mt-[70px] flex flex-col justify-center items-center bg-gray-50 ">
             <Banner />
-            <div className="w-full h-full bg-negro grid grid-cols-[repeat(1,auto)] ">
+            <div className="w-full h-full bg-negro grid grid-cols-[repeat(1,auto)] pt-[20px]">
                 {services.map((service, i) => (
                     <div
                         key={i}
                         className=" text-center mb-[20px] lg:mb-[50px]">
-                        <FontAwesomeIcon
-                            icon={faCheckDouble}
-                            style={{ color: '#00C957', width: '18' }}
-                        />{' '}
                         <h2 className="text-2xl text-center font-bold text-blancoTres tracking-wide leading-normal lg:3xl ">
                             {' '}
                             {service.category}
