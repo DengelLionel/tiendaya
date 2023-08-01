@@ -1,6 +1,20 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckDouble } from '@fortawesome/free-solid-svg-icons'
+import {
+    faCheckDouble,
+    faShop,
+    faWindowMaximize,
+    faLaptopCode,
+    faGears,
+    faMobileScreen,
+    faCreditCard,
+    faPenFancy,
+    faPaste,
+    faSplotch,
+    faChartColumn,
+    faChalkboardUser,
+} from '@fortawesome/free-solid-svg-icons'
 import CuadroServicio from './CuadroServicio'
+import Banner from './Banner'
 
 const services = [
     {
@@ -11,6 +25,7 @@ const services = [
                     'Desarrollo de tiendas en línea con Shopify y WooCommerce.',
                 descripcion: 'Te ayudamos a crear tu tienda online.',
                 llamadaaccion: '¡Empieza hoy!',
+                icono: faShop,
                 link: `/servicios/desarrollo-shopify-woocommerce`,
             },
             {
@@ -18,6 +33,7 @@ const services = [
                 descripcion:
                     'Diseñamos sitios web profesionales de WordPress personalizados a tus necesidades.',
                 llamadaaccion: '¡Crea tu sitio WordPress ahora!',
+                icono: faWindowMaximize,
                 link: '/servicios/',
             },
             {
@@ -25,6 +41,7 @@ const services = [
                 descripcion:
                     'Desarrollamos soluciones web personalizadas desde cero para cumplir tus objetivos específicos.',
                 llamadaaccion: '¡Personaliza tu web hoy!',
+                icono: faLaptopCode,
                 link: '/servicios/',
             },
             {
@@ -32,6 +49,7 @@ const services = [
                 descripcion:
                     'Mantenimiento y actualizaciones constantes para asegurar el rendimiento óptimo de tu tienda',
                 llamadaaccion: '¡Obtén soporte ahora!',
+                icono: faGears,
                 link: '/servicios/',
             },
             {
@@ -39,6 +57,7 @@ const services = [
                 descripcion:
                     'Aseguramos una experiencia de compra excelente en todos los dispositivos.',
                 llamadaaccion: '¡Optimiza ahora!',
+                icono: faMobileScreen,
                 link: '/servicios/',
             },
             {
@@ -46,6 +65,7 @@ const services = [
                 descripcion:
                     'Configuramos la plataforma de pago que mejor se adapte a tu negocio.',
                 llamadaaccion: '¡Integra pagos ahora!',
+                icono: faCreditCard,
                 link: '/servicios/',
             },
         ],
@@ -58,6 +78,7 @@ const services = [
                 descripcion:
                     '  Creamos diseños atractivos y funcionales para potenciar tu marca en el entorno digital.',
                 llamadaaccion: '¡Diseña ahora!',
+                icono: faPenFancy,
                 link: '/servicios/',
             },
             {
@@ -65,6 +86,7 @@ const services = [
                 descripcion:
                     'Redactamos contenido cautivador que atraerá a tus clientes y mejorará el SEO de tu tienda.',
                 llamadaaccion: '¡Obtén contenido ahora!',
+                icono: faPaste,
                 link: '/servicios/',
             },
         ],
@@ -77,6 +99,7 @@ const services = [
                 descripcion:
                     'Ofrecemos análisis detallados para ayudarte a comprender y optimizar el comportamiento de tus clientes.',
                 llamadaaccion: '¡Analiza ahora!',
+                icono: faSplotch,
                 link: '/servicios/',
             },
             {
@@ -84,6 +107,7 @@ const services = [
                 descripcion:
                     'Creamos estrategias personalizadas para aumentar tu visibilidad online y atraer a más clientes.',
                 llamadaaccion: '¡Mejora tu visibilidad ahora!',
+                icono: faChartColumn,
                 link: '/servicios/',
             },
         ],
@@ -96,6 +120,7 @@ const services = [
                 descripcion:
                     'Te proporcionamos las herramientas y conocimientos necesarios para gestionar y hacer crecer tu tienda en línea.',
                 llamadaaccion: '¡Aprende ahora!',
+                icono: faChalkboardUser,
                 link: '/servicios/',
             },
         ],
@@ -104,24 +129,28 @@ const services = [
 
 export default function Services() {
     return (
-        <section className="mt-[70px] bg-gray-50 py-16 px-4 h-full">
-            <div className="w-full flex  flex-wrap justify-center items-center space-y-16">
+        <section className="mt-[70px] flex flex-col justify-center items-center bg-gray-50 ">
+            <Banner />
+            <div className="w-full h-full bg-negro grid grid-cols-[repeat(1,auto)] ">
                 {services.map((service, i) => (
-                    <div key={i} className="space-y-6 text-center">
+                    <div
+                        key={i}
+                        className=" text-center mb-[20px] lg:mb-[50px]">
                         <FontAwesomeIcon
                             icon={faCheckDouble}
                             style={{ color: '#00C957', width: '18' }}
                         />{' '}
-                        <h2 className="text-2xl text-center font-bold text-azul lg:3xl ">
+                        <h2 className="text-2xl text-center font-bold text-blancoTres tracking-wide leading-normal lg:3xl ">
                             {' '}
                             {service.category}
                         </h2>
-                        <section className="space-y-4">
+                        <section className="grid grid-cols-[repeat(1,auto)] md:grid-cols-[repeat(2,auto)] md:gap-0  lg:grid-cols-[repeat(3,auto)] lg:gap-[20px] ">
                             {service.items.map((item, j) => (
                                 <CuadroServicio
                                     key={j}
                                     ide={j}
                                     titulo={item.titulo}
+                                    icono={item.icono}
                                     descripcion={item.descripcion}
                                     llamadaaccion={item.llamadaaccion}
                                     link={item.link}

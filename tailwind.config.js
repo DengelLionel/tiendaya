@@ -14,7 +14,8 @@ module.exports = {
                 "blueOne":"#274C77",
                 "blancoOne":"#EEEFF3",
                 "blancoTwo":"#F7F8F7",
-                "negro":"#020507",
+                "blancoTres":"#FDFDFD",
+                "negro":"#0F0F10",
                 "blueTwo":"#1f2951",
                 "blueTres":"#6893AE",
                 "verde":"#00C957",
@@ -23,6 +24,7 @@ module.exports = {
                 "color2":"#07edea",
                 "pinkk":"#f152f4",
                 "greenn":"#24f057",
+                
              
                      },
             fontFamily:{
