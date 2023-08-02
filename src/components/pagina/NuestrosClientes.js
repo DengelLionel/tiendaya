@@ -7,7 +7,7 @@ const NuestrosClientes = () => {
                 Nuestros Clientes
             </h2>
             <section className=" w-full flex flex-wrap items-center justify-center gap-[15px] lg:gap-[35px] ">
-                <div className="relative w-[200px] h-[90px]">
+                <div className="relative w-[200px] h-[90px] transition-all duration-[300ms] grayscale hover:grayscale-0">
                     <Image
                         src={
                             'https://res.cloudinary.com/darps1cta/image/upload/v1687493114/nexo/Nexo-Medic_Logo_dklapo.png'
@@ -17,7 +17,17 @@ const NuestrosClientes = () => {
                         objectFit="contain"
                     />
                 </div>
-                <div className="relative w-[200px] h-[90px]">
+                <div className="relative w-[200px] h-[90px] transition-all duration-[300ms] grayscale hover:grayscale-0">
+                    <Image
+                        src={
+                            'https://res.cloudinary.com/darps1cta/image/upload/v1690936587/creatiendaya/fivicon_isatex_fforlj.jpg'
+                        }
+                        alt="cliente"
+                        layout="fill"
+                        objectFit="contain"
+                    />
+                </div>
+                <div className="relative w-[200px] h-[90px]  transition-all duration-[300ms] grayscale hover:grayscale-0">
                     <Image
                         src={
                             'https://res.cloudinary.com/darps1cta/image/upload/v1687493114/nexo/Nexo-Medic_Logo_dklapo.png'
@@ -27,17 +37,7 @@ const NuestrosClientes = () => {
                         objectFit="contain"
                     />
                 </div>
-                <div className="relative w-[200px] h-[90px]">
-                    <Image
-                        src={
-                            'https://res.cloudinary.com/darps1cta/image/upload/v1687493114/nexo/Nexo-Medic_Logo_dklapo.png'
-                        }
-                        alt="cliente"
-                        layout="fill"
-                        objectFit="contain"
-                    />
-                </div>
-                <div className="relative w-[200px] h-[90px]">
+                <div className="relative w-[200px] h-[90px] transition-all duration-[300ms] grayscale hover:grayscale-0">
                     <Image
                         src={
                             'https://res.cloudinary.com/darps1cta/image/upload/v1687493114/nexo/Nexo-Medic_Logo_dklapo.png'
