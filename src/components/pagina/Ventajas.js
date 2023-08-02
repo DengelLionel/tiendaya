@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faStore, faShop } from '@fortawesome/free-solid-svg-icons'
 const Ventaja = ({ titulo, descripcion, nombreIcon, colorborde }) => (
     <div
-        className={`flex flex-wrap flex-row sm:flex-col justify-center items-center w-full sm:w-1/4 p-5 bg-white rounded-md shadow-xl border-l-4 ${colorborde} h-auto gap-[10px] shadow-md lg:shadow-xl`}>
+        className={`flex flex-wrap flex-row sm:flex-col justify-center items-center w-full sm:w-1/4 p-5 bg-white rounded-md shadow-xl border-b-4 ${colorborde} h-auto gap-[10px] shadow-md lg:shadow-xl`}>
         <div className="flex justify-center ">
             <FontAwesomeIcon
                 icon={nombreIcon}
