@@ -68,7 +68,7 @@ const NavBarMobil = () => {
             <div
                 className={`${
                     isOpen
-                        ? 'block transition-all duration-[0.5s] absolute left-0 bg-[#fafafa] shadow-lg w-[270px] h-full opacity-100 visible overflow-y-auto'
+                        ? 'block transition-all duration-[0.5s] absolute left-0 bg-[#fafafa] shadow-lg w-[270px] h-[100vh] opacity-100 visible overflow-y-auto'
                         : 'opacity-0  transition-all duration-[0.5s] invisible w-0  h-[500px] left-[-100%]'
                 } lg:block`}>
                 <NavbarMenu />
