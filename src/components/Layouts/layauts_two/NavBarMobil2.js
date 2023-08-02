@@ -57,7 +57,7 @@ const NavBarMobil = () => {
                             objectFit="contain"
                             priority={true}
                             src={
-                                'https://res.cloudinary.com/darps1cta/image/upload/v1689460545/creatiendaya/crea-tienda-ya.jpg'
+                                'https://res.cloudinary.com/darps1cta/image/upload/v1691015577/creatiendaya/crea-tienda-ya-logo-horizontal.png'
                             }
                             alt="crea tienda ya"
                         />

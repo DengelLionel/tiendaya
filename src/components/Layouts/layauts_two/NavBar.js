@@ -17,7 +17,7 @@ const Navbar = () => {
                         className="font-semibold text-xl tracking-tight w-[220px] h-[90px] relative"
                         href="/">
                         <Image
-                            src="https://res.cloudinary.com/darps1cta/image/upload/v1689460545/creatiendaya/crea-tienda-ya.jpg"
+                            src="https://res.cloudinary.com/darps1cta/image/upload/v1691015577/creatiendaya/crea-tienda-ya-logo-horizontal.png"
                             layout="fill"
                             priority={true}
                             objectFit="contain"
